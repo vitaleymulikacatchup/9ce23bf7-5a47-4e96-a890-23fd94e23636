@@ -32,7 +32,7 @@ const Home = () => {
       </section>
       <section id="features" className="bg-light-gray p-12">
         <TextboxStandard title={<h2>Why Choose Us?</h2>} description={<p>Discover the benefits of buying with us:</p>} />
-        <BentoHoverBorderGlow items={[{ title: 'Fast Financing', description: 'Get approved in minutes!' }, { title: 'Warranty', description: 'We offer a full warranty on every purchase.' }, { title: 'Trade-In', description: 'Trade-in your old car for a new one.' }]} />
+        <BentoHoverBorderGlow items={[{ icon: 'CreditCardIcon', title: 'Fast Financing', description: 'Get approved in minutes!' }, { icon: 'ShieldIcon', title: 'Warranty', description: 'We offer a full warranty on every purchase.' }, { icon: 'ExchangeIcon', title: 'Trade-In', description: 'Trade-in your old car for a new one.' }]} />
       </section>
       <section id="how-it-works" className="bg-white p-12">
         <TimelineBase items={[{ title: 'Step 1', description: 'Select your car', image: '/images/logo.svg' }, { title: 'Step 2', description: 'Get financed', image: '/images/logo-dot.svg' }, { title: 'Step 3', description: 'Drive away!', image: '/images/logo.svg' }]} className="border p-8" />
