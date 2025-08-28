@@ -1,12 +1,10 @@
-use client
+"use client"
 
 import { SiteThemeProvider } from '@/components/sections/ThemeProvider';
 import BillboardHero from '@/components/sections/layouts/hero/BillboardHero';
-import ButtonIconArrow from '@/components/buttons/ButtonIconArrow';
-import CentralFAQ from '@/components/sections/layouts/faq/CentralFAQ';
-import { TextFillGradient } from '@/components/text/TextFillGradient';
-import BentoMediaGallery from '@/components/bento/BentoMediaGallery/BentoMediaGallery';
 import TextboxStandard from '@/components/textbox/TextboxStandard';
+import CentralFAQ from '@/components/sections/layouts/faq/CentralFAQ';
+import BentoMediaGallery from '@/components/bento/BentoMediaGallery/BentoMediaGallery';
 import ButtonTextStagger from '@/components/buttons/ButtonTextStagger';
 import NumberGridTokenomics from '@/components/sections/layouts/tokenomics/NumberGridTokenomics';
 import TimelineBase from '@/components/timeline/TimelineBase';
@@ -51,7 +49,7 @@ const Home = () => {
           <input type="email" placeholder="Email" className="border rounded p-3" />
           <input type="text" placeholder="Phone" className="border rounded p-3" />
           <textarea placeholder="Message" className="border rounded p-3" rows={4} />
-          <ButtonIconArrow text="Submit Inquiry" onClick={() => {}} />
+          <ButtonTextStagger text="Submit Inquiry" />
         </form>
       </section>
     </SiteThemeProvider>
