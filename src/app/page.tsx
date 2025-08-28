@@ -5,7 +5,6 @@ import BillboardHero from '@/components/sections/layouts/hero/BillboardHero';
 import TextboxStandard from '@/components/textbox/TextboxStandard';
 import CentralFAQ from '@/components/sections/layouts/faq/CentralFAQ';
 import BentoMediaGallery from '@/components/bento/BentoMediaGallery/BentoMediaGallery';
-import ButtonTextStagger from '@/components/buttons/ButtonTextStagger';
 import NumberGridTokenomics from '@/components/sections/layouts/tokenomics/NumberGridTokenomics';
 import TimelineBase from '@/components/timeline/TimelineBase';
 import BentoHoverBorderGlow from '@/components/bento/BentoHoverBorderGlow/BentoHoverBorderGlow';
@@ -30,7 +29,6 @@ const Home = () => {
       <section id="showroom" className="bg-white p-12">
         <TextboxStandard title={<h2>Our Showcase</h2>} description={<p>Explore our top models below:</p>} />
         <BentoMediaGallery items={cars.map(car => ({ title: car.title, image: car.image }))} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6" />
-        <ButtonTextStagger text="View More Details" />
       </section>
       <section id="features" className="bg-light-gray p-12">
         <TextboxStandard title={<h2>Why Choose Us?</h2>} description={<p>Discover the benefits of buying with us:</p>} />
@@ -49,7 +47,6 @@ const Home = () => {
           <input type="email" placeholder="Email" className="border rounded p-3" />
           <input type="text" placeholder="Phone" className="border rounded p-3" />
           <textarea placeholder="Message" className="border rounded p-3" rows={4} />
-          <ButtonTextStagger text="Submit Inquiry" />
         </form>
       </section>
     </SiteThemeProvider>
